@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger Bite — Fresh. Fast. Delicious.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">BB</span>
+      <span class="brand-word">Burger Bite</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#order">Order Now</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Downtown Annaba · Est. 2022</p>
+    <h1 class="hero-title">
+      Fresh.<br>
+      Fast.<br>
+      <span class="accent-text">Delicious.</span>
+    </h1>
+    <p class="hero-sub">Burgers built to order, pizza fired hot, and sides that don't wait around. Dine in, take away, or have it at your door in minutes.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">See the Menu</a>
+      <a href="tel:+213555123456" class="btn btn-ghost">Call to Order</a>
+    </div>
+    <div id="status-chip" class="status-chip">
+      <span class="dot"></span>
+      <span id="status-text">Checking hours…</span>
+    </div>
+  </div>
+  <div class="hero-graphic" aria-hidden="true">
+    <svg viewBox="0 0 400 400" class="burger-svg">
+      <ellipse cx="200" cy="330" rx="150" ry="26" fill="#4A2E1F"/>
+      <path d="M60 250 Q60 190 200 190 Q340 190 340 250 L340 265 Q340 280 325 280 L75 280 Q60 280 60 265 Z" fill="#E1483B"/>
+      <rect x="65" y="255" width="270" height="18" fill="#F2A93B"/>
+      <path d="M55 235 Q55 150 200 140 Q345 150 345 235 Q345 250 200 250 Q55 250 55 235 Z" fill="#F2A93B"/>
+      <g fill="#FBF4E8">
+        <circle cx="120" cy="185" r="5"/>
+        <circle cx="165" cy="170" r="5"/>
+        <circle cx="210" cy="180" r="5"/>
+        <circle cx="255" cy="168" r="5"/>
+        <circle cx="290" cy="188" r="5"/>
+        <circle cx="145" cy="200" r="4"/>
+        <circle cx="230" cy="202" r="4"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ================= TICKER ================= -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>CLASSIC BURGER 650 DA</span><span>·</span>
+    <span>FREE WI-FI</span><span>·</span>
+    <span>HOME DELIVERY</span><span>·</span>
+    <span>OPEN 10AM – 11PM EVERY DAY</span><span>·</span>
+    <span>CLASSIC BURGER 650 DA</span><span>·</span>
+    <span>FREE WI-FI</span><span>·</span>
+    <span>HOME DELIVERY</span><span>·</span>
+    <span>OPEN 10AM – 11PM EVERY DAY</span><span>·</span>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-card">
+      <span class="card-label">01 — Since</span>
+      <span class="card-value">2022</span>
+      <p>Slinging burgers in downtown Annaba for going on four years.</p>
+    </div>
+    <div class="about-card">
+      <span class="card-label">02 — Hours</span>
+      <span class="card-value">10 – 23</span>
+      <p>Open every single day, no closing days, no exceptions.</p>
+    </div>
+    <div class="about-card">
+      <span class="card-label">03 — Serve</span>
+      <span class="card-value">4 Ways</span>
+      <p>Dine-in, takeaway, delivery, or order online — your call.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="menu" id="menu">
+  <div class="menu-inner">
+    <p class="section-eyebrow">The Board</p>
+    <h2 class="section-title">What's Cooking</h2>
+
+    <div class="menu-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="burgers">Burgers</button>
+      <button class="tab-btn" data-tab="pizza">Pizza</button>
+      <button class="tab-btn" data-tab="sides">Sides</button>
+      <button class="tab-btn" data-tab="drinks">Drinks</button>
+    </div>
+
+    <div class="menu-panel active" data-panel="burgers">
+      <ul class="ticket-list">
+        <li><span class="item-name">Classic Burger</span><span class="leader"></span><span class="item-price">650 DA</span></li>
+        <li><span class="item-name">Cheese Burger</span><span class="leader"></span><span class="item-price">750 DA</span></li>
+        <li><span class="item-name">Double Beef Burger</span><span class="leader"></span><span class="item-price">990 DA</span></li>
+        <li><span class="item-name">Chicken Burger</span><span class="leader"></span><span class="item-price">700 DA</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-panel" data-panel="pizza">
+      <ul class="ticket-list">
+        <li><span class="item-name">Margherita</span><span class="leader"></span><span class="item-price">900 DA</span></li>
+        <li><span class="item-name">Pepperoni</span><span class="leader"></span><span class="item-price">1200 DA</span></li>
+        <li><span class="item-name">BBQ Chicken</span><span class="leader"></span><span class="item-price">1300 DA</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-panel" data-panel="sides">
+      <ul class="ticket-list">
+        <li><span class="item-name">French Fries</span><span class="leader"></span><span class="item-price">300 DA</span></li>
+        <li><span class="item-name">Onion Rings</span><span class="leader"></span><span class="item-price">400 DA</span></li>
+        <li><span class="item-name">Nuggets (6 pcs)</span><span class="leader"></span><span class="item-price">600 DA</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-panel" data-panel="drinks">
+      <ul class="ticket-list">
+        <li><span class="item-name">Coca-Cola</span><span class="leader"></span><span class="item-price">200 DA</span></li>
+        <li><span class="item-name">Sprite</span><span class="leader"></span><span class="item-price">200 DA</span></li>
+        <li><span class="item-name">Orange Juice</span><span class="leader"></span><span class="item-price">300 DA</span></li>
+        <li><span class="item-name">Mineral Water</span><span class="leader"></span><span class="item-price">100 DA</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <div class="services-inner">
+    <div class="service">
+      <div class="service-icon">🍽️</div>
+      <span>Dine-In</span>
+    </div>
+    <div class="service">
+      <div class="service-icon">🥡</div>
+      <span>Takeaway</span>
+    </div>
+    <div class="service">
+      <div class="service-icon">🛵</div>
+      <span>Home Delivery</span>
+    </div>
+    <div class="service">
+      <div class="service-icon">📲</div>
+      <span>Online Ordering</span>
+    </div>
+    <div class="service">
+      <div class="service-icon">📶</div>
+      <span>Free Wi-Fi</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATION / CONTACT ================= -->
+<section class="location" id="location">
+  <div class="location-inner">
+    <div class="location-info">
+      <p class="section-eyebrow light">Find Us</p>
+      <h2 class="section-title light">Downtown, Annaba</h2>
+      <p class="address">125 Main Street, Downtown<br>Annaba, Algeria</p>
+      <div class="info-row">
+        <span class="info-label">Hours</span>
+        <span>10:00 AM – 11:00 PM · Every Day</span>
+      </div>
+      <div class="info-row" id="contact">
+        <span class="info-label">Phone</span>
+        <a href="tel:+213555123456">+213 555 123 456</a>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Email</span>
+        <a href="mailto:info@burgerbite.com">info@burgerbite.com</a>
+      </div>
+      <div class="socials">
+        <a href="https://instagram.com/burgerbite" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/burgerbite" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@burgerbite" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="location-map">
+      <iframe
+        title="Burger Bite location map"
+        src="https://maps.google.com/maps?q=Annaba%2C%20Algeria&t=&z=14&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAYMENT ================= -->
+<section class="payment">
+  <div class="payment-inner">
+    <span class="payment-label">We Accept</span>
+    <div class="payment-methods">
+      <span>Cash</span>
+      <span>Bank Card</span>
+      <span>Mobile Payment</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="order">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">BB</span>
+      <span class="brand-word">Burger Bite</span>
+    </div>
+    <p class="footer-tag">Fresh. Fast. Delicious.</p>
+    <p class="footer-copy">© 2026 Burger Bite. 125 Main Street, Downtown, Annaba, Algeria.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
